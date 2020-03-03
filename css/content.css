@@ -87,6 +87,7 @@ padding-left: 2em;
 }
 
 
+
 /* section, aside {
   float: left;
   margin: 0 1.5%;
@@ -128,6 +129,7 @@ aside{
 .desktop {
   display: none;
 }
+
 .logo{
     display: none;
 }
