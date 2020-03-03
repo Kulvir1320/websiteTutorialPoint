@@ -1,0 +1,182 @@
+body{
+  background-color: #8FBC8F;
+}
+
+
+#container {
+  width=100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  text-align: center;
+}
+hr {
+
+    border: 0px;
+    height: 2px;
+    width: 100%;
+    background: black;
+}
+#wrapper {
+  display: flex;            /* establish flex container */
+  flex-direction: column;   /* stack flex items vertically */
+  position: relative;       /* establish neares positioned ancenstor for absolute positioning */
+
+}
+h1 {
+  color: #9370DB;
+  font-size: 5em;
+  font-family: cursive;
+  background-color: #F0FFF0;
+  border-radius: 0.25em;
+    opacity: 0.85;
+}
+
+.text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+}
+
+
+.center-aligned {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+
+nav {
+font-family: cursive;
+font-weight: lighter;
+margin-top: -0.50em;
+text-align: center;
+border-radius: 0.25em;
+border-color: #1d1d1c;
+}
+nav ul {
+  padding: 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+
+}
+nav li {
+  background-color:#F5DEB3;
+  border-radius: 2em;
+  list-style-type: none;
+  margin: 0.3em;
+  padding: 0.4em;
+}
+nav li a {
+  color: #1d1d1c;
+  font-size: 1em;
+  text-decoration: none;
+}
+section{
+  float: left;
+  margin: 0 1.5%;
+  width: 63%;
+}
+section img{
+  padding-left: 7em;
+  border-radius: 50%;
+  height: 30%;
+  width: 30%;
+}
+aside{
+  float: right;
+padding-left: -1.5em;
+  margin: 0 1.5%;
+  width: 30%;
+}
+article{
+  float: right;
+  margin: 0 1.5%;
+  width: 30%;
+}
+footer {
+  clear: both;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+p{
+  font-size: 100%;
+}
+aside{
+  background-color: #F0FFF0;
+  border-radius: 0 5em 5em 5em;
+  box-shadow: 1em 1em 1em #4c4f4d;
+  padding: 1.5em;
+  margin: 1em;
+
+}
+.mobile {
+  display: inline;
+}
+
+/* add style fro the desktop class */
+.desktop {
+  display: none;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media only screen and (min-width: 685px) {
+  .mobile {
+      display: none;
+    }
+
+    /* sektop styles */
+    .desktop {
+      display: inline;
+    }
+    #box {
+      width: 50%;
+    }
+
+  }
+@media only screen and (min-width: 865px){
+  nav ul {
+    margin: 0;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+  }
+
+  /* styles for teh li in nav */
+  nav li {
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    width: 25%;
+  }
+
+  /* styles for the links in the nav */
+  nav li a {
+    display: inline-block;
+    padding: 0.7em;
+
+  }
+  #about {
+
+  }
+
+}
