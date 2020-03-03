@@ -175,8 +175,19 @@ aside{
     padding: 0.7em;
 
   }
-  #about {
-
+  nav li a:hover {
+    color: #9d9d93;;
+    font-style: italic;
   }
+
+  nav li a:link {
+    color: #ffffff;
+  }
+
+  nav li a:visited {
+    color: #008080;
+  }
+
+
 
 }

@@ -79,6 +79,18 @@ nav li a {
   font-size: 1em;
   text-decoration: none;
 }
+nav li a:hover {
+  color: #9d9d93;;
+  font-style: italic;
+}
+
+nav li a:link {
+  color: #ffffff;
+}
+
+nav li a:visited {
+  color: #008080;
+}
 h2{
 padding-left: 2em;
   margin-top: 4em;
